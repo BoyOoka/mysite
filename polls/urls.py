@@ -2,7 +2,8 @@
 from django.urls import path
 
 from . import views
-
+# 设置命名空间，模板url可以准确定位
+app_name = 'polls'
 urlpatterns = [
     path('', views.index, name='index'),
     # ex: /polls/5/

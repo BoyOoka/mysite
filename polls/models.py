@@ -12,6 +12,7 @@ class Question(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
+    # choices_set = models.IntegerField()
 
 
 class Choice(models.Model):
